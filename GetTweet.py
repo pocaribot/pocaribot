@@ -5,10 +5,10 @@ import requests
 import tweepy
 
 # APIのトークン
-CK="uMP7ZYRj9WwglabvKpMnkWPGT"
-CS="qQBywkpM7lCU9KVCeXCwUUnkzPiVEgpqb6uP4siTjvZJhUd3Jg"
-AT="1325434551217266689-H4lAyWfjLUBjpjAKMe9H6iEAOqPV8H"
-AS="4iI5frDikdWSQRmRbjGNJnc3ILzIumhVdYnIDVceiodNK"
+CK=os.environ[CK]
+CS=os.environ[CS]
+AT=os.environ[AT]
+AS=os.environ[AS]
 
 def gettweet(CK, CS, AT, AS):
 

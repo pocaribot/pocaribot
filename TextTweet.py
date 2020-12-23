@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 import json
 from requests_oauthlib import OAuth1Session
 from _GenerateText import GenerateText
@@ -6,10 +7,10 @@ import random
 
 def puttweet():
     # APIのトークン
-    CK="uMP7ZYRj9WwglabvKpMnkWPGT"
-    CS="qQBywkpM7lCU9KVCeXCwUUnkzPiVEgpqb6uP4siTjvZJhUd3Jg"
-    AT="1325434551217266689-H4lAyWfjLUBjpjAKMe9H6iEAOqPV8H"
-    AS="4iI5frDikdWSQRmRbjGNJnc3ILzIumhVdYnIDVceiodNK"
+    CK=os.environ[CK]
+    CS=os.environ[CS]
+    AT=os.environ[AT]
+    AS=os.environ[AS]
 
     # APIに接続
     twitter = OAuth1Session(CK,CS,AT,AS)
