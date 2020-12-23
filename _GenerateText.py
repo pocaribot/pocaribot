@@ -7,7 +7,7 @@ def pickup():
     text = f.read()
     f.close
     #print(text)
-    #text="ぽ"
+    #text="ぽぽぽ"
     text=text.split('fghalglea')
     random.shuffle(text)
     #print(text)
