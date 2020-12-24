@@ -1,6 +1,6 @@
 import MeCab
 
-#string = "起きる"
+#string = "起きろ"
 
 def mlist(string):
     tagger = MeCab.Tagger("-Ochasen")
