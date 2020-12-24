@@ -1,4 +1,5 @@
 import MeCab
+import ipadic
 
 #string = "起きろ"
 
