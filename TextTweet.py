@@ -7,10 +7,10 @@ import random
 
 def puttweet():
     # APIのトークン
-    CK=os.environ[CK]
-    CS=os.environ[CS]
-    AT=os.environ[AT]
-    AS=os.environ[AS]
+    CK=os.environ["CK"]
+    CS=os.environ["CS"]
+    AT=os.environ["AT"]
+    AS=os.environ["AS"]
 
     # APIに接続
     twitter = OAuth1Session(CK,CS,AT,AS)

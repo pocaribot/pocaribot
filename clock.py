@@ -5,10 +5,10 @@ import TextTweet
 import GetTweet
 
 # APIのトークン
-CK=os.environ[CK]
-CS=os.environ[CS]
-AT=os.environ[AT]
-AS=os.environ[AS]
+CK=os.environ["CK"]
+CS=os.environ["CS"]
+AT=os.environ["AT"]
+AS=os.environ["AS"]
 
 twische = BlockingScheduler()
 
