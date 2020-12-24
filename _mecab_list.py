@@ -4,7 +4,9 @@ import ipadic
 #string = "起きろ"
 
 def mlist(string):
-    tagger = MeCab.Tagger("-Ochasen")
+    CHASEN_ARGS = r' -F "%m\t%f[7]\t%f[6]\t%F-[0,1,2,3]\t%f[4]\t%f[5]\n"'
+    CHASEN_ARGS += r' -U "%m\t%m\t%m\t%F-[0,1,2,3]\t\t\n"'
+    tagger = MeCab.Tagger(ipadic.MECAB_ARGS + CHASEN_ARGS)
     tagger.parse('')
     node = tagger.parseToNode(string)
 
