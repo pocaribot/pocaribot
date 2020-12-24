@@ -3,7 +3,7 @@ from _nmojihosei import nmojihosei
 import random
 
 def pickup():
-    f = open("data.txt",encoding="utf-8")
+    f = open("Data.txt",encoding="utf-8")
     text = f.read()
     f.close
     #print(text)

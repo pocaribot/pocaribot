@@ -21,7 +21,7 @@ def gettweet(CK, CS, AT, AS):
     results=api.home_timeline(count=100,include_rts=False)
 
     #ここのmodeをaにするとdata.txtに上書きしてくれるよ
-    f=open(r"data.txt",mode="w",encoding="utf-8")
+    f=open(r"Data.txt",mode="w",encoding="utf-8")
 
     for result in results:
 
