@@ -15,7 +15,7 @@ def pickup():
 
 def GenerateText():
     text=pickup()
-    text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","私は素敵な鳩です。"]
+    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","私は素敵な鳩です。"]
     ending="走り回る女子高生のCM(POCARI SWEAT)"
     i=0
     generated_text=""
