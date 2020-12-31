@@ -26,5 +26,7 @@ def TT():
 twische.add_job(GT,'cron',hour="0-17,22-23",minute="0,15,30,45")
 twische.add_job(TT,'cron',hour="0-17,22-23",minute="0,30")
 
+GT()
+
 if __name__ == "__main__":
     twische.start()
