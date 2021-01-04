@@ -15,7 +15,7 @@ def pickup():
 
 def GenerateText():
     text=pickup()
-    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","私は素敵な鳩です。"]
+    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","おいしくない"]
     ending="走り回る女子高生のCM(POCARI SWEAT)"
     i=0
     generated_text=""
@@ -83,6 +83,12 @@ def GenerateText():
                     return generated_text
                 if list[j][1][1]=='形容動詞語幹':
                     list[j][0]=list[j][1][6] + "に"
+                    for k in range(j+1):
+                        generated_text+=list[k][0]
+                    generated_text=generated_text+ending
+                    return generated_text
+                if list[j][1][0]=='助動詞' and list[j][1][6]=='ない':
+                    list[j][0]='なく'
                     for k in range(j+1):
                         generated_text+=list[k][0]
                     generated_text=generated_text+ending
