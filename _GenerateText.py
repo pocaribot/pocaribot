@@ -15,7 +15,7 @@ def pickup():
 
 def GenerateText():
     text=pickup()
-    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","おいしくない"]
+    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","叫んでたわ"]
     ending="走り回る女子高生のCM(POCARI SWEAT)"
     i=0
     generated_text=""
@@ -43,14 +43,24 @@ def GenerateText():
                             list[j][0] = nmojihosei(list[j][1][6],1) + "い"
                         if po[3]=='カ':
                             list[j][0] = nmojihosei(list[j][1][6],1) + "き"
+                        if po[3]=='ガ':
+                            list[j][0] = nmojihosei(list[j][1][6],1) + "ぎ"
                         if po[3]=='サ':
                             list[j][0] = nmojihosei(list[j][1][6],1) + "し"
+                        if po[3]=='ザ':
+                            list[j][0] = nmojihosei(list[j][1][6],1) + "じ"
                         if po[3]=='タ':
                             list[j][0] = nmojihosei(list[j][1][6],1) + "ち"
+                        if po[3]=='ダ':
+                            list[j][0] = nmojihosei(list[j][1][6],1) + "ぢ"
                         if po[3]=='ナ':
                             list[j][0] = nmojihosei(list[j][1][6],1) + "に"
                         if po[3]=='ハ':
                             list[j][0] = nmojihosei(list[j][1][6],1) + "ひ"
+                        if po[3]=='バ':
+                            list[j][0] = nmojihosei(list[j][1][6],1) + "び"
+                        if po[3]=='パ':
+                            list[j][0] = nmojihosei(list[j][1][6],1) + "ぴ"
                         if po[3]=='マ':
                             list[j][0] = nmojihosei(list[j][1][6],1) + "み"
                         if po[3]=='ヤ':
