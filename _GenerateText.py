@@ -15,7 +15,7 @@ def pickup():
 
 def GenerateText():
     text=pickup()
-    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","叫んでたわ"]
+    #text=["@smaller_yu\n気分がいい","走り回りながら走り回る女子高生のCM(POCARI SWEAT)","なんかつべ死んでるんだけど僕だけ？"]
     ending="走り回る女子高生のCM(POCARI SWEAT)"
     i=0
     generated_text=""
@@ -36,7 +36,7 @@ def GenerateText():
             j=len(list)-1
             while j>=0:
                 katsuyou = list[j][1][4].split("・")[0]
-                if list[j][1][0]=='動詞' and (katsuyou!='一段' or list[j][1][6]!='てる'):
+                if list[j][1][0]=='動詞' and (katsuyou!='一段' or (list[j][1][6]!='てる' and list[j][1][6]!='でる')):
                     if katsuyou=='五段':
                         po=list[j][1][4]
                         if po[3]=='ア':
