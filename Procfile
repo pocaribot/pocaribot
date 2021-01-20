@@ -1,1 +1,1 @@
-web: python _clock.py
+clock: python _clock.py
