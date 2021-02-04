@@ -31,6 +31,12 @@ def gettweet(CK, CS, AT, AS):
         #@ツイートの削除
         #result.text=re.sub("@[\w]+","",result.text)
 
+        #" "(半角空白)を残す
+        result.text=re.sub(" ","agkobeor",result.text)
+
+        #改行を残す
+        result.text=re.sub("\n","boaignier",result.text)
+
         #ほかにも消したい文字があるならここにresult.text=re.sub("消したい文字","",result.text)と追記(ツイッターの設定でワードミュート設定するほうが手軽）
         result.text=re.sub("走り回る女子高生のCM(POCARI SWEAT)","",result.text)
 

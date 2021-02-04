@@ -1,6 +1,7 @@
 from _mecab_list import mlist
 from _nmojihosei import nmojihosei
 import random
+import re
 
 def pickup():
     f = open("Data.txt",encoding="utf-8")
@@ -81,6 +82,8 @@ def GenerateText():
                     for k in range(j+1):
                         generated_text+=list[k][0]
                     generated_text += "ながら"+ending
+                    generated_text=re.sub("boaignier","\n",generated_text)
+                    generated_text=re.sub("agkobeor"," ",generated_text)
                     return generated_text
                 if list[j][1][0]=='形容詞':
                     if list[j][1][6]=='いい':
@@ -90,18 +93,24 @@ def GenerateText():
                     for k in range(j+1):
                         generated_text+=list[k][0]
                     generated_text=generated_text+ending
+                    generated_text=re.sub("boaignier","\n",generated_text)
+                    generated_text=re.sub("agkobeor"," ",generated_text)
                     return generated_text
                 if list[j][1][1]=='形容動詞語幹':
                     list[j][0]=list[j][1][6] + "に"
                     for k in range(j+1):
                         generated_text+=list[k][0]
                     generated_text=generated_text+ending
+                    generated_text=re.sub("boaignier","\n",generated_text)
+                    generated_text=re.sub("agkobeor"," ",generated_text)
                     return generated_text
                 if list[j][1][0]=='助動詞' and list[j][1][6]=='ない':
                     list[j][0]='なく'
                     for k in range(j+1):
                         generated_text+=list[k][0]
                     generated_text=generated_text+ending
+                    generated_text=re.sub("boaignier","\n",generated_text)
+                    generated_text=re.sub("agkobeor"," ",generated_text)
                     return generated_text
                 else:
                     j=j-1
