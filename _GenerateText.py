@@ -29,7 +29,7 @@ def GenerateText():
     while i<len(text):
         string=text[i]
         print(string)
-        if string[0]=="@" or (len(string)>25 and string[(len(string)-25):len(string)]=="走り回る女子高生のCM(POCARI SWEAT)"):
+        if string[0]=="@" or (len(string)>32 and string[(len(string)-32):len(string)]=="走り回る女子高生のCM(POCARIagkobeorSWEAT)"):
             i=i+1
         else:
             list=mlist(string)
